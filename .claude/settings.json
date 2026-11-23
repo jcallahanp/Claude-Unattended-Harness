@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(/spec/**)",
+      "Edit(/checks/guards/**)",
+      "Edit(/guard-sample)",
+      "Bash(python3 harness/spec.py *)",
+      "Bash(python3 harness/loop.py status)",
+      "Bash(python3 harness/loop.py retry *)",
+      "Bash(bash harness/preflight.sh *)",
+      "Bash(bash harness/run.sh *)",
+      "Bash(bash checks/run_gates.sh)",
+      "Bash(bash checks/guards/*)",
+      "Bash(truncate -s 101M guard-sample)",
+      "Bash(rm guard-sample)",
+      "Bash(git push origin main)",
+      "Bash(git switch main)"
+    ]
+  }
+}
